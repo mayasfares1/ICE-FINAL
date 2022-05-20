@@ -3,7 +3,9 @@
 Funktionelle kravEksternt værktøj
 
 Madplansprogram – Hvad skal det kunne? 
+
 •	Overordnet skal det kunne: 
+
 o	Give en opskrift på 1-flere personer ved søgning på en til flere hovedingredienser. 
 o	Opskrift -en/-erne skal komme frem med det ønskede antal personer, tilberedningstid, samt kJ for den samlede mængde, og pr. Person. 
 o	Ligge opskrifterne i en madplan pr. Dag pr. Uge. 
