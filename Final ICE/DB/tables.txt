@@ -1,0 +1,31 @@
+-----------collector---------------
+CREATE TABLE `collector` (
+  `id` int NOT NULL,
+  `dishID` int NOT NULL,
+  `ingID` int DEFAULT NULL,
+  `unitValue` float DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `ing_idx` (`ingID`),
+  KEY `jfsa_idx` (`dishID`),
+  CONSTRAINT `hsafj` FOREIGN KEY (`dishID`) REFERENCES `dishes` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+-----------dishes-------------------
+CREATE TABLE `dishes` (
+  `id` int NOT NULL,
+  `name` varchar(100) DEFAULT NULL,
+  `favorite` varchar(45) DEFAULT NULL,
+  `description` varchar(1500) DEFAULT NULL,
+  `type` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+------------ingredients--------------
+CREATE TABLE `ingredients` (
+  `id` int NOT NULL,
+  `name` varchar(45) DEFAULT NULL,
+  `unit` varchar(45) DEFAULT NULL,
+  `energyUnit` varchar(45) DEFAULT NULL,
+  `energyValue` int DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
