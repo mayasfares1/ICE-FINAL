@@ -1,0 +1,45 @@
+@startuml
+class Main
+class Ingredients
+class Meal
+class DbIO
+class TextUI
+class Planner
+
+Meal o-- Ingredients
+Planner *-- DbIO
+Planner *-- TextUI
+Main o-- Planner
+Planner o-- Meal
+
+Meal : String mealName;
+Meal : String type;
+Meal : ArrayList<Ingreditents> ingredients;
+Meal : boolean favorite
+Meal : Class Meal(String mealName){}
+Meal : getMealName();
+Meal : setIngreditent();
+
+
+Main : Planner planner = new Planner;
+Main : planner.mealPlanner();
+
+TextUI : mainMenu();
+
+Planner : createShoppingList(ArrayList<Meal> meals))
+Planner : showShoppingList()
+Planner : showMealPlan()
+Planner : showMeal()
+Planner : ArrayList<Meal> meals
+Planner : getMeals();
+
+Ingredients : String name;
+Ingredients : int quantity;
+Ingredients : String unit;
+Ingredients : String energyQuantity;
+Ingredients : int energyUnit;
+
+DbIO : createMeal(ArrayList<Meal> meal);
+
+
+@enduml
