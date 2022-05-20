@@ -1,19 +1,28 @@
 # ICE-FINAL 
 
-Funktionelle kravEksternt værktøj
+Funktionelle krav
+
+Eksternt værktøj
 
 Madplansprogram – Hvad skal det kunne? 
 
 •	Overordnet skal det kunne: 
 
 o	Give en opskrift på 1-flere personer ved søgning på en til flere hovedingredienser. 
+
 o	Opskrift -en/-erne skal komme frem med det ønskede antal personer, tilberedningstid, samt kJ for den samlede mængde, og pr. Person. 
+
 o	Ligge opskrifterne i en madplan pr. Dag pr. Uge. 
+
 o	Tilfældigt genereret ugeplan. 
+
 o	Indkøbsliste (Til ugeplanerne/madplanerne) 
-o	Livretter(?) 
+
+o	Livretter
 o	Fiskedag(Kød/ikke kød osv.) 
+
 o	Gemme madplanen. 
+
 o	Valgmuligheder Aftensmad/Morgenmad/ desserter 
 •	Programmering: 
 o	Menu: 
